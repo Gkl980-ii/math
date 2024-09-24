@@ -1,0 +1,160 @@
+/* Стилі для body */
+  body {
+    margin: 0;
+    padding: 0;
+
+  }
+
+  @media (min-width: 1500px) and (max-width: 2000px) {
+    h1 {
+      font-size: 32px !important
+    }
+  }
+
+  /* Стилі для основного контейнера */
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+	height:100%;
+    /* Гумова відсоткова ширина */
+    margin: 0 auto;
+    /* Центрування по горизонталі */
+    z-index: 2;
+    /* Поверх зображення */
+    position: relative;
+    /* Додаємо позицію */
+	background-color:white
+  }
+.video-container {
+  position: relative;
+  width: 90%;
+  height: 80%;
+  margin: 0 auto;
+}
+
+.video-thumbnail {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  cursor: pointer;
+}
+
+.video-thumbnail img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#play-button {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+  /* Стилі для контейнера */
+  .container {
+    font-family: "Edwardian Script ITC", serif;
+    background-color: green;
+    color: white;
+    padding: 20px;
+    border: 4px solid #ccc;
+    text-align: center;
+    width: 50%;
+    /* Гумова відсоткова ширина */
+  }
+
+.menu {
+  display: none;
+  position: fixed;
+  top: 6%;
+  left: 5%;
+  width: 100%;
+  background-color: #333;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc;
+  z-index: 999;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul li {
+  margin-bottom: 5px;
+   position: relative;
+}
+.links {
+  margin-left: 20px;
+  padding-top: 5px;
+}
+
+.links a {
+  display: block;
+  padding: 5px 0;
+  text-decoration: none;
+  color: #fff;
+}
+
+.links a:hover {
+  color: #007BFF;
+}
+
+.menu ul li a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.menu-toggle {
+  position: fixed;
+  top: 10px;
+  left: 8%;
+  cursor: pointer;
+    display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.menu-toggle:hover {
+  background-color: #555;
+
+}
+    /* Styles for the menu when it is hovered */
+    .menu:hover {
+      background-color: #3399ff;
+      box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    }
+  }
+ 
+  /* Стилі для контенту */
+  .content {
+    padding: 20px;
+    width: 100%;
+    /* Гумова відсоткова ширина */
+    z-index: 2
+
+    }
+
+
