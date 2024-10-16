@@ -67,13 +67,26 @@
     color: white;
     padding: 20px;
     border: 4px solid #ccc;
-    text-align: center;
-    width: 50%;
-   font-size: 4em; /* Розмір шрифту - змінюй на необхідний */
-  font-weight: bold; /* Жирний шрифт */
- padding-right: 50px; /* Додатковий відступ справа */
-    /* Гумова відсоткова ширина */
-  }
+    text-align: right; /* Переміщуємо назву вправо */
+    width: 100%; /* Ширина контейнера для адаптивності */
+    font-size: 4em; /* Розмір шрифту */
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+/* Для мобільних пристроїв */
+@media (max-width: 600px) {
+    .container {
+        font-size: 2em; /* Зменшуємо розмір шрифту на телефонах */
+        text-align: right;
+        padding: 10px; /* Зменшуємо відступи */
+    }
+
+    .menu-toggle {
+        top: 20px; /* Налаштування позиції меню-кнопки */
+    }
+}
+
 
 .menu {
   display: none;
